@@ -1,0 +1,47 @@
+body{
+    overflow: hidden;
+}
+
+.picture-container{
+    width: 612px;
+    height: 612px;
+    display:block;
+    position: absolute;
+    transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+}
+
+.left{
+    background-color: red;
+    top: auto;
+    left: -306px;
+    z-index: 0;
+    //filter: blur(1px) brightness(0.7) grayscale(75%);
+    //-webkit-filter: blur(1px) brightness(0.7) grayscale(75%);
+}
+
+.active{
+    background-color: green;
+    margin: auto;
+    top: auto;
+    left: 50%;
+    margin-left: -306px;
+    z-index: 1;
+    filter: none;
+    -webkit-filter: none;
+}
+
+.right{
+    background-color: blue;
+    top: auto;
+    left: 100%;
+    margin-left: -306px;
+    z-index: 0;
+    //filter: blur(1px) brightness(0.7) grayscale(75%);
+    //-webkit-filter: blur(1px) brightness(0.7) grayscale(75%);
+}
+
+.invisible{
+    z-index: -5;
+}
